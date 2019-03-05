@@ -16,9 +16,9 @@ Following are some step-by-step guidelines to get the code up and running.
 
 ## Step 1: Indexing data in Elasticsearch
 
-  Prerequisite: creating an index in [Kibana]{https://www.elastic.co/guide/en/kibana/6.2/tutorial-load-dataset.html}
-  Different data analyzers for pre-processing can be found in the [reference docs]{
-  https://www.elastic.co/guide/en/elasticsearch/reference/6.2/analysis.html}
+  Prerequisite: creating an index in [Kibana](https://www.elastic.co/guide/en/kibana/6.2/tutorial-load-dataset.html)
+  Different data analyzers for pre-processing can be found in the [reference docs](
+  https://www.elastic.co/guide/en/elasticsearch/reference/6.2/analysis.html)
 
 
 ## Step 2: Indexing data from file system
