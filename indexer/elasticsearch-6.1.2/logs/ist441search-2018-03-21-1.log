@@ -1,0 +1,32 @@
+[2018-03-21T13:39:36,253][INFO ][o.e.n.Node               ] [ist441giles.ist.psu.edu] initializing ...
+[2018-03-21T13:39:36,341][INFO ][o.e.e.NodeEnvironment    ] [ist441giles.ist.psu.edu] using [1] data paths, mounts [[/data (/dev/mapper/centos-data)]], net usable_space [354.4gb], net total_space [371gb], types [xfs]
+[2018-03-21T13:39:36,342][INFO ][o.e.e.NodeEnvironment    ] [ist441giles.ist.psu.edu] heap size [24.7gb], compressed ordinary object pointers [true]
+[2018-03-21T13:39:36,373][INFO ][o.e.n.Node               ] [ist441giles.ist.psu.edu] node name [ist441giles.ist.psu.edu], node ID [hyp3VaJRRXSb9xP3beSfJg]
+[2018-03-21T13:39:36,373][INFO ][o.e.n.Node               ] [ist441giles.ist.psu.edu] version[6.1.2], pid[102808], build[5b1fea5/2018-01-10T02:35:59.208Z], OS[Linux/3.10.0-693.17.1.el7.x86_64/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_144/25.144-b01]
+[2018-03-21T13:39:36,374][INFO ][o.e.n.Node               ] [ist441giles.ist.psu.edu] JVM arguments [-Xms1g, -Xmx1g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -XX:+HeapDumpOnOutOfMemoryError, -Xmx25g, -Des.path.home=/data/ist441/team2/indexer/elasticsearch-6.1.2, -Des.path.conf=/data/ist441/team2/indexer/elasticsearch-6.1.2/config]
+[2018-03-21T13:39:37,110][INFO ][o.e.p.PluginsService     ] [ist441giles.ist.psu.edu] loaded module [aggs-matrix-stats]
+[2018-03-21T13:39:37,110][INFO ][o.e.p.PluginsService     ] [ist441giles.ist.psu.edu] loaded module [analysis-common]
+[2018-03-21T13:39:37,111][INFO ][o.e.p.PluginsService     ] [ist441giles.ist.psu.edu] loaded module [ingest-common]
+[2018-03-21T13:39:37,111][INFO ][o.e.p.PluginsService     ] [ist441giles.ist.psu.edu] loaded module [lang-expression]
+[2018-03-21T13:39:37,111][INFO ][o.e.p.PluginsService     ] [ist441giles.ist.psu.edu] loaded module [lang-mustache]
+[2018-03-21T13:39:37,111][INFO ][o.e.p.PluginsService     ] [ist441giles.ist.psu.edu] loaded module [lang-painless]
+[2018-03-21T13:39:37,111][INFO ][o.e.p.PluginsService     ] [ist441giles.ist.psu.edu] loaded module [mapper-extras]
+[2018-03-21T13:39:37,111][INFO ][o.e.p.PluginsService     ] [ist441giles.ist.psu.edu] loaded module [parent-join]
+[2018-03-21T13:39:37,111][INFO ][o.e.p.PluginsService     ] [ist441giles.ist.psu.edu] loaded module [percolator]
+[2018-03-21T13:39:37,111][INFO ][o.e.p.PluginsService     ] [ist441giles.ist.psu.edu] loaded module [reindex]
+[2018-03-21T13:39:37,111][INFO ][o.e.p.PluginsService     ] [ist441giles.ist.psu.edu] loaded module [repository-url]
+[2018-03-21T13:39:37,112][INFO ][o.e.p.PluginsService     ] [ist441giles.ist.psu.edu] loaded module [transport-netty4]
+[2018-03-21T13:39:37,112][INFO ][o.e.p.PluginsService     ] [ist441giles.ist.psu.edu] loaded module [tribe]
+[2018-03-21T13:39:37,112][INFO ][o.e.p.PluginsService     ] [ist441giles.ist.psu.edu] no plugins loaded
+[2018-03-21T13:39:38,264][INFO ][o.e.d.DiscoveryModule    ] [ist441giles.ist.psu.edu] using discovery type [zen]
+[2018-03-21T13:39:38,748][INFO ][o.e.n.Node               ] [ist441giles.ist.psu.edu] initialized
+[2018-03-21T13:39:38,749][INFO ][o.e.n.Node               ] [ist441giles.ist.psu.edu] starting ...
+[2018-03-21T13:39:38,857][INFO ][o.e.t.TransportService   ] [ist441giles.ist.psu.edu] publish_address {127.0.0.1:9302}, bound_addresses {127.0.0.1:9302}, {[::1]:9302}
+[2018-03-21T13:39:38,872][WARN ][o.e.b.BootstrapChecks    ] [ist441giles.ist.psu.edu] initial heap size [1073741824] not equal to maximum heap size [26843545600]; this can cause resize pauses and prevents mlockall from locking the entire heap
+[2018-03-21T13:39:38,873][WARN ][o.e.b.BootstrapChecks    ] [ist441giles.ist.psu.edu] max file descriptors [4096] for elasticsearch process is too low, increase to at least [65536]
+[2018-03-21T13:39:41,927][INFO ][o.e.c.s.MasterService    ] [ist441giles.ist.psu.edu] zen-disco-elected-as-master ([0] nodes joined), reason: new_master {ist441giles.ist.psu.edu}{hyp3VaJRRXSb9xP3beSfJg}{Ud3Y1ny-RH6jsJjDKldD7w}{localhost}{127.0.0.1:9302}
+[2018-03-21T13:39:41,935][INFO ][o.e.c.s.ClusterApplierService] [ist441giles.ist.psu.edu] new_master {ist441giles.ist.psu.edu}{hyp3VaJRRXSb9xP3beSfJg}{Ud3Y1ny-RH6jsJjDKldD7w}{localhost}{127.0.0.1:9302}, reason: apply cluster state (from master [master {ist441giles.ist.psu.edu}{hyp3VaJRRXSb9xP3beSfJg}{Ud3Y1ny-RH6jsJjDKldD7w}{localhost}{127.0.0.1:9302} committed version [1] source [zen-disco-elected-as-master ([0] nodes joined)]])
+[2018-03-21T13:39:41,958][INFO ][o.e.h.n.Netty4HttpServerTransport] [ist441giles.ist.psu.edu] publish_address {130.203.135.65:9202}, bound_addresses {130.203.135.65:9202}
+[2018-03-21T13:39:41,958][INFO ][o.e.n.Node               ] [ist441giles.ist.psu.edu] started
+[2018-03-21T13:39:42,256][INFO ][o.e.g.GatewayService     ] [ist441giles.ist.psu.edu] recovered [4] indices into cluster_state
+[2018-03-21T13:39:42,865][INFO ][o.e.c.r.a.AllocationService] [ist441giles.ist.psu.edu] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[ist441-test-0][4], [ist441-test-0][1]] ...]).

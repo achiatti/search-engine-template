@@ -1,0 +1,1727 @@
+.error-auto-create-index {
+  padding: 25px;
+}
+.error-multi-allow-explicit-index {
+  padding: 25px;
+}
+.uiAceKeyboardHint {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.7);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  opacity: 0;
+}
+.uiAceKeyboardHint:focus {
+  opacity: 1;
+  border: 2px solid #0079a5;
+  z-index: 1000;
+}
+.uiAceKeyboardHint.uiAceKeyboardHint-isInactive {
+  display: none;
+}
+/*!
+ * ui-select
+ * http://github.com/angular-ui/ui-select
+ * Version: 0.19.5 - 2016-10-24T23:13:59.551Z
+ * License: MIT
+ */
+
+
+/* Style when highlighting a search. */
+.ui-select-highlight {
+  font-weight: bold;
+}
+
+.ui-select-offscreen {
+  clip: rect(0 0 0 0) !important;
+  width: 1px !important;
+  height: 1px !important;
+  border: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  position: absolute !important;
+  outline: 0 !important;
+  left: 0px !important;
+  top: 0px !important;
+}
+
+
+.ui-select-choices-row:hover {
+  background-color: #f5f5f5;
+}
+
+/* Select2 theme */
+
+/* Mark invalid Select2 */
+.ng-dirty.ng-invalid > a.select2-choice {
+    border-color: #D44950;
+}
+
+.select2-result-single {
+  padding-left: 0;
+}
+
+.select2-locked > .select2-search-choice-close{
+  display:none;
+}
+
+.select-locked > .ui-select-match-close{
+    display:none;
+}
+
+body > .select2-container.open {
+  z-index: 9999; /* The z-index Select2 applies to the select2-drop */
+}
+
+/* Handle up direction Select2 */
+.ui-select-container[theme="select2"].direction-up .ui-select-match,
+.ui-select-container.select2.direction-up .ui-select-match {
+    border-radius: 4px; /* FIXME hardcoded value :-/ */
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.ui-select-container[theme="select2"].direction-up .ui-select-dropdown,
+.ui-select-container.select2.direction-up .ui-select-dropdown {
+    border-radius: 4px; /* FIXME hardcoded value :-/ */
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+
+    border-top-width: 1px;  /* FIXME hardcoded value :-/ */
+    border-top-style: solid;
+
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.25);
+
+    margin-top: -4px; /* FIXME hardcoded value :-/ */
+}
+.ui-select-container[theme="select2"].direction-up .ui-select-dropdown .select2-search,
+.ui-select-container.select2.direction-up .ui-select-dropdown .select2-search {
+    margin-top: 4px; /* FIXME hardcoded value :-/ */
+}
+.ui-select-container[theme="select2"].direction-up.select2-dropdown-open .ui-select-match,
+.ui-select-container.select2.direction-up.select2-dropdown-open .ui-select-match {
+    border-bottom-color: #5897fb;
+}
+
+.ui-select-container[theme="select2"] .ui-select-dropdown .ui-select-search-hidden,
+.ui-select-container[theme="select2"] .ui-select-dropdown .ui-select-search-hidden input{
+    opacity: 0;
+    height: 0;
+    min-height: 0;
+    padding: 0;
+    margin: 0;
+    border:0;
+}
+
+/* Selectize theme */
+
+/* Helper class to show styles when focus */
+.selectize-input.selectize-focus{
+  border-color: #007FBB !important;
+}
+
+/* Fix input width for Selectize theme */
+.selectize-control.single > .selectize-input > input {
+  width: 100%;
+}
+
+/* Fix line break when there's at least one item selected with the Selectize theme */
+.selectize-control.multi > .selectize-input > input {
+  margin: 0 !important;
+}
+
+/* Fix dropdown width for Selectize theme */
+.selectize-control > .selectize-dropdown {
+  width: 100%;
+}
+
+/* Mark invalid Selectize */
+.ng-dirty.ng-invalid > div.selectize-input {
+    border-color: #D44950;
+}
+
+/* Handle up direction Selectize */
+.ui-select-container[theme="selectize"].direction-up .ui-select-dropdown {
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.25);
+    margin-top: -2px; /* FIXME hardcoded value :-/ */
+}
+
+.ui-select-container[theme="selectize"] input.ui-select-search-hidden{
+    opacity: 0;
+    height: 0;
+    min-height: 0;
+    padding: 0;
+    margin: 0;
+    border:0;
+    width: 0;
+}
+
+/* Bootstrap theme */
+
+/* Helper class to show styles when focus */
+.btn-default-focus {
+  color: #333;
+  background-color: #EBEBEB;
+  border-color: #ADADAD;
+  text-decoration: none;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+.ui-select-bootstrap .ui-select-toggle {
+  position: relative;
+}
+
+.ui-select-bootstrap .ui-select-toggle > .caret {
+  position: absolute;
+  height: 10px;
+  top: 50%;
+  right: 10px;
+  margin-top: -2px;
+}
+
+/* Fix Bootstrap dropdown position when inside a input-group */
+.input-group > .ui-select-bootstrap.dropdown {
+  /* Instead of relative */
+  position: static;
+}
+
+.input-group > .ui-select-bootstrap > input.ui-select-search.form-control {
+  border-radius: 4px; /* FIXME hardcoded value :-/ */
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.input-group > .ui-select-bootstrap > input.ui-select-search.form-control.direction-up {
+  border-radius: 4px !important; /* FIXME hardcoded value :-/ */
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+.ui-select-bootstrap .ui-select-search-hidden{
+    opacity: 0;
+    height: 0;
+    min-height: 0;
+    padding: 0;
+    margin: 0;
+    border:0;
+}
+
+.ui-select-bootstrap > .ui-select-match > .btn{
+  /* Instead of center because of .btn */
+  text-align: left !important;
+}
+
+.ui-select-bootstrap > .ui-select-match > .caret {
+  position: absolute;
+  top: 45%;
+  right: 15px;
+}
+
+/* See Scrollable Menu with Bootstrap 3 http://stackoverflow.com/questions/19227496 */
+.ui-select-bootstrap > .ui-select-choices ,.ui-select-bootstrap > .ui-select-no-choice {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  overflow-x: hidden;
+  margin-top: -1px;
+}
+
+body > .ui-select-bootstrap.open {
+  z-index: 1000; /* Standard Bootstrap dropdown z-index */
+}
+
+.ui-select-multiple.ui-select-bootstrap {
+  height: auto;
+  padding: 3px 3px 0 3px;
+}
+
+.ui-select-multiple.ui-select-bootstrap input.ui-select-search {
+  background-color: transparent !important; /* To prevent double background when disabled */
+  border: none;
+  outline: none;
+  height: 1.666666em;
+  margin-bottom: 3px;
+}
+
+.ui-select-multiple.ui-select-bootstrap .ui-select-match .close {
+  font-size: 1.6em;
+  line-height: 0.75;
+}
+
+.ui-select-multiple.ui-select-bootstrap .ui-select-match-item {
+  outline: 0;
+  margin: 0 3px 3px 0;
+}
+
+.ui-select-multiple .ui-select-match-item {
+  position: relative;
+}
+
+.ui-select-multiple .ui-select-match-item.dropping .ui-select-match-close {
+  pointer-events: none;
+}
+
+.ui-select-multiple:hover .ui-select-match-item.dropping-before:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 100%;
+  height: 100%;
+  margin-right: 2px;
+  border-left: 1px solid #428bca;
+}
+
+.ui-select-multiple:hover .ui-select-match-item.dropping-after:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 100%;
+  height: 100%;
+  margin-left: 2px;
+  border-right: 1px solid #428bca;
+}
+
+.ui-select-bootstrap .ui-select-choices-row>span {
+    cursor: pointer;
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #333;
+    white-space: nowrap;
+}
+
+.ui-select-bootstrap .ui-select-choices-row>span:hover, .ui-select-bootstrap .ui-select-choices-row>span:focus {
+    text-decoration: none;
+    color: #262626;
+    background-color: #f5f5f5;
+}
+
+.ui-select-bootstrap .ui-select-choices-row.active>span {
+    color: #fff;
+    text-decoration: none;
+    outline: 0;
+    background-color: #428bca;
+}
+
+.ui-select-bootstrap .ui-select-choices-row.disabled>span,
+.ui-select-bootstrap .ui-select-choices-row.active.disabled>span {
+    color: #777;
+    cursor: not-allowed;
+    background-color: #fff;
+}
+
+/* fix hide/show angular animation */
+.ui-select-match.ng-hide-add,
+.ui-select-search.ng-hide-add {
+    display: none !important;
+}
+
+/* Mark invalid Bootstrap */
+.ui-select-bootstrap.ng-dirty.ng-invalid > button.btn.ui-select-match {
+    border-color: #D44950;
+}
+
+/* Handle up direction Bootstrap */
+.ui-select-container[theme="bootstrap"].direction-up .ui-select-dropdown {
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.ui-select-bootstrap .ui-select-match-text {
+    width: 100%;
+    padding-right: 1em;
+}
+.ui-select-bootstrap .ui-select-match-text span {
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+}
+.ui-select-bootstrap .ui-select-toggle > a.btn {
+  position: absolute;
+  height: 10px;
+  right: 10px;
+  margin-top: -2px;
+}
+
+/* Spinner */
+.ui-select-refreshing {
+    position: absolute;
+    right: 0;
+    padding: 8px 27px;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing:antialiased;
+ }
+ 
+@-webkit-keyframes ui-select-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes ui-select-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+.ui-select-spin {
+  -webkit-animation: ui-select-spin 2s infinite linear;
+  animation: ui-select-spin 2s infinite linear;
+}
+
+.ui-select-refreshing.ng-animate {
+  -webkit-animation: none 0s;
+} .filterEditor {
+  position: absolute;
+  width: 600px;
+  z-index: 101;
+}
+.filterEditor__labelBar {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.filterEditor__wideField {
+  min-width: 0;
+}
+.filterEditorParamsInput {
+  min-width: 100px;
+}
+.uiSelectChoices--autoWidth {
+  width: auto !important;
+  min-width: 100% !important;
+}
+.uiSelectMatch--ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.uiSelectMatch--restrictToParent .ui-select-match-item {
+  max-width: 100%;
+}
+.uiSelectMatch--pillWithTooltip {
+  display: block;
+  margin-right: 16px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.kbn-timepicker {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  /**
+   * 1. Override kuiLocalNav styles.
+   */
+  /**
+   * Avoid last nav overlaping collapse button
+   */
+}
+.kbn-timepicker .kbn-timepicker-content {
+  width: 100%;
+  max-width: 600px;
+}
+.kbn-timepicker [kbn-time-input] {
+  text-align: center;
+}
+.kbn-timepicker .kbn-timepicker-modes {
+  text-transform: capitalize;
+}
+.kbn-timepicker .kbn-timepicker-section {
+  float: left;
+  width: 25%;
+}
+.kbn-timepicker .kbn-timepicker-section + .kbn-timepicker-section {
+  padding-left: 15px;
+}
+.kbn-timepicker .kbn-timepicker-body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  align-itmes: top;
+  -webkit-box-pack: stretch;
+  -webkit-justify-content: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+  width: 100%;
+}
+@media (max-width: 660px) {
+  .kbn-timepicker .kbn-timepicker-body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.kbn-timepicker .kbn-timepicker-body-column {
+  width: 100%;
+}
+.kbn-timepicker .kbn-timepicker-form-header {
+  margin-bottom: 0 !important;
+}
+.kbn-timepicker .kbn-timepicker-actions {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: baseline;
+  -webkit-align-items: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+.kbn-timepicker .kbn-timepicker-action-item,
+.kbn-timepicker .kbn-timepicker-submit-button {
+  margin-left: 10px;
+}
+.kbn-timepicker .kbn-timepicker-submit-button {
+  min-width: 100px;
+}
+.kbn-timepicker .kbn-refresh-section {
+  float: left;
+  padding: 0px 15px;
+}
+.kbn-timepicker .kbn-timepicket-alert {
+  width: 100px;
+}
+.kbn-timepicker .kbn-timepicker-error {
+  color: #A30000;
+}
+.kbn-timepicker .kbn-timepicker-title {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.kbn-timepicker .kbn-timepicker-title__text {
+  margin-bottom: 0 !important;
+  /* 1 */
+}
+.kbn-timepicker .kbn-timepicker-title__section {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.kbn-timepicker .kbn-timerpicker-nav-button {
+  padding: 3px 10px;
+  font-size: 14px;
+  border-radius: 4px;
+  display: block;
+}
+.kbn-timepicker .kbn-timerpicker-nav-button.active {
+  color: #FFF;
+  background-color: #0079a5;
+}
+.kbn-timepicker .nav:last-child {
+  margin-right: 24px;
+}
+.typeahead {
+  position: relative;
+}
+.typeahead .typeahead-items {
+  border: 1px solid;
+  border-color: #D9D9D9;
+  color: #2D2D2D;
+  background-color: #ffffff;
+  position: absolute;
+  top: 32px;
+  z-index: 1030;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  border-radius: 4px;
+}
+.typeahead .typeahead-items .typeahead-item {
+  border-bottom: 1px solid;
+  border-bottom-color: #F5F5F5;
+  padding: 5px 15px;
+}
+.typeahead .typeahead-items .typeahead-item:last-child {
+  border-bottom: 0px;
+  border-radius: 0 0 4px 4px;
+}
+.typeahead .typeahead-items .typeahead-item:first-child {
+  border-bottom: 0px;
+  border-radius: 4px 4px 0 0;
+}
+.typeahead .typeahead-items .typeahead-item.active {
+  color: #FFF;
+  background-color: #0079a5;
+}
+.inline-form .typeahead.visible .input-group > :first-child {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.inline-form .typeahead.visible .input-group > :last-child {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.error {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 100%;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  text-align: center;
+}
+.error p {
+  margin-top: 15%;
+  font-size: 18px;
+  text-wrap: wrap;
+}
+.visualize-chart {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  min-height: 0;
+  min-width: 0;
+}
+.vis-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 100%;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  min-height: 0;
+  min-width: 0;
+  overflow: hidden;
+  padding: 10px 0;
+}
+.vis-wrapper svg {
+  overflow: visible;
+}
+/* YAxis logic */
+.y-axis-col-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 0;
+  min-width: 0;
+}
+.y-axis-col {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 36px;
+      -ms-flex: 1 0 36px;
+          flex: 1 0 36px;
+  min-height: 0;
+  min-width: 0;
+}
+.y-axis-spacer-block {
+  min-height: 0px;
+}
+.y-axis-div-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 20px;
+  min-width: 0;
+}
+.y-axis-div {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 25px;
+      -ms-flex: 1 1 25px;
+          flex: 1 1 25px;
+  min-width: 1px;
+  min-height: 14px;
+  margin: 5px 0px;
+}
+.y-axis-title {
+  min-height: 14px;
+  min-width: 1px;
+}
+.y-axis-chart-title {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 14px;
+  min-width: 0;
+}
+.y-axis-title text,
+.x-axis-title text {
+  font-size: 9pt;
+  fill: #848e96;
+  font-weight: bold;
+}
+.chart-title {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 100%;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  min-height: 14px;
+  min-width: 14px;
+}
+.chart-title text {
+  font-size: 11px;
+  fill: #848e96;
+}
+.vis-col-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 0px;
+      -ms-flex: 1 0 0px;
+          flex: 1 0 0px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 0;
+  min-width: 0;
+}
+.chart-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 0px;
+      -ms-flex: 1 0 0px;
+          flex: 1 0 0px;
+  overflow: visible;
+  margin: 5px;
+  min-height: 0;
+  min-width: 0;
+}
+.chart-wrapper-row .chart-wrapper {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.chart-wrapper-column .chart-wrapper {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.chart-wrapper-column {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 20px;
+      -ms-flex: 1 0 20px;
+          flex: 1 0 20px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  min-height: 0;
+  min-width: 0;
+}
+.chart-wrapper-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 100%;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  min-height: 0;
+  min-width: 0;
+}
+.chart {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 100%;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  min-height: 0;
+  min-width: 0;
+  overflow: visible;
+}
+.chart > svg {
+  display: block;
+}
+.chart-row {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  min-height: 0;
+  min-width: 0;
+}
+.chart-column {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  min-height: 0;
+  min-width: 0;
+}
+.x-axis-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 0px;
+  min-width: 0;
+  overflow: visible;
+}
+.x-axis-div-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  min-height: 0px;
+  min-width: 0;
+}
+.x-axis-chart-title {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  min-height: 1px;
+  max-height: 15px;
+  min-width: 20px;
+}
+.x-axis-title {
+  min-width: 20px;
+}
+.x-axis-div {
+  min-height: 0px;
+  min-width: 1px;
+  margin: 0px 5px;
+  width: 100%;
+}
+.x-axis-div svg {
+  float: left;
+  /* for some reason svg wont get positioned in top left corner of container div without this */
+}
+.axis-wrapper-top .axis-div svg {
+  margin-bottom: -5px;
+}
+.chart-first {
+  margin-top: 0px;
+  margin-left: 0px;
+}
+.chart-last {
+  margin-bottom: 0px;
+  margin-right: 0px;
+}
+.label-line {
+  opacity: .3;
+  stroke: black;
+  stroke-width: 2px;
+  fill: none;
+}
+.label-text {
+  font-size: 130%;
+  font-weight: normal;
+}
+visualize-legend {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.legend-collapse-button {
+  -webkit-align-self: flex-start;
+      -ms-flex-item-align: start;
+          align-self: flex-start;
+}
+.legend-col-wrapper {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 10;
+  min-height: 0;
+  overflow: hidden;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-top: 5px;
+}
+.legend-col-wrapper > * {
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+}
+.vis-container--legend-left .legend-col-wrapper {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: row-reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+.vis-container--legend-right .legend-col-wrapper {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.vis-container--legend-top .legend-col-wrapper {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: column-reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  width: 100%;
+  padding-left: 25px;
+}
+.vis-container--legend-bottom .legend-col-wrapper {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  padding-left: 25px;
+}
+.legend-col-wrapper .header {
+  cursor: pointer;
+  width: 15px;
+}
+.legend-col-wrapper .legend-ul {
+  width: 150px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  color: #666;
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 0;
+  visibility: visible;
+  min-height: 0;
+  font-size: 12px;
+  line-height: 13px;
+  text-align: left;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.vis-container--legend-top .legend-col-wrapper .legend-ul,
+.vis-container--legend-bottom .legend-col-wrapper .legend-ul {
+  width: auto;
+  overflow-y: hidden;
+}
+.vis-container--legend-top .legend-col-wrapper .legend-ul .legend-value,
+.vis-container--legend-bottom .legend-col-wrapper .legend-ul .legend-value {
+  display: inline-block;
+}
+.legend-col-wrapper .legend-ul.hidden {
+  visibility: hidden;
+}
+.legend-value:hover {
+  cursor: pointer;
+}
+.legend-value-title {
+  padding: 3px;
+}
+.legend-value-title:hover {
+  background-color: #c0c0c0;
+}
+.legend-value-truncate {
+  overflow-x: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.legend-value-full {
+  white-space: normal;
+  word-break: break-all;
+  background-color: #c0c0c0;
+}
+.legend-value-details {
+  border-bottom: 1px solid #D9D9D9;
+}
+.legend-value-color-picker {
+  width: 130px;
+  margin: auto;
+}
+.legend-value-color-picker .dot {
+  line-height: 14px;
+  margin: 2px;
+  font-size: 14px;
+}
+.legend-value-color-picker .dot:hover {
+  margin: 0px;
+  font-size: 18px;
+}
+/* Axis Styles */
+.axis {
+  shape-rendering: crispEdges;
+  stroke-width: 1px;
+}
+.axis line,
+.axis path {
+  stroke: #ddd;
+  fill: none;
+  shape-rendering: crispEdges;
+}
+.tick text {
+  font-size: 8pt;
+  fill: #848e96;
+}
+.chart-text {
+  fill: #848e96;
+}
+.label-line {
+  stroke: #848e96;
+}
+.label-text {
+  fill: #848e96;
+}
+/* Brush Styling */
+.brush .extent {
+  stroke: #ffffff;
+  fill-opacity: .125;
+  shape-rendering: crispEdges;
+}
+/* SVG Element Default Styling */
+rect {
+  opacity: 1;
+}
+rect:hover {
+  opacity: 0.8;
+}
+circle {
+  opacity: 0;
+}
+circle:hover {
+  opacity: 1;
+  stroke-width: 10px;
+  stroke-opacity: 0.8;
+}
+.overlap_area {
+  opacity: 0.8;
+}
+.series > path,
+.series > rect {
+  fill-opacity: 0.8;
+  stroke-opacity: 1;
+  stroke-width: 0;
+}
+.blur_shape {
+  opacity: 0.3 !important;
+}
+.slice {
+  stroke: white;
+  stroke-width: 2px;
+}
+.slice:hover {
+  opacity: 0.8;
+}
+.leaflet-clickable:hover {
+  stroke-width: 10px;
+  stroke-opacity: 0.8;
+}
+/* Visualization Styling */
+.line circle {
+  opacity: 1;
+}
+.line circle:hover {
+  stroke-width: 10px;
+  stroke-opacity: 0.8;
+}
+.endzone {
+  opacity: 0.05;
+  fill: #000000;
+  pointer-events: none;
+}
+.vis-tooltip,
+.vis-tooltip-sizing-clone {
+  visibility: hidden;
+  line-height: 1.1;
+  font-size: 14px;
+  font-weight: normal;
+  background: rgba(0, 9, 12, 0.9) !important;
+  color: #FFF !important;
+  border-radius: 4px;
+  position: fixed;
+  z-index: 120;
+  word-wrap: break-word;
+  max-width: 40%;
+  overflow: hidden;
+  pointer-events: none;
+}
+.vis-tooltip > :last-child,
+.vis-tooltip-sizing-clone > :last-child {
+  margin-bottom: 8px;
+}
+.vis-tooltip > *,
+.vis-tooltip-sizing-clone > * {
+  margin: 8px 8px 0;
+}
+.vis-tooltip .tooltip-label,
+.vis-tooltip-sizing-clone .tooltip-label {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  color: #66afc9;
+  font-weight: normal;
+}
+.vis-tooltip .tooltip-label th,
+.vis-tooltip-sizing-clone .tooltip-label th {
+  font-weight: 600;
+}
+.vis-tooltip .tooltip-value,
+.vis-tooltip-sizing-clone .tooltip-value {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+.vis-tooltip table td,
+.vis-tooltip-sizing-clone table td,
+.vis-tooltip table th,
+.vis-tooltip-sizing-clone table th {
+  padding: 4px;
+}
+.vis-tooltip table td.row-bucket,
+.vis-tooltip-sizing-clone table td.row-bucket,
+.vis-tooltip table th.row-bucket,
+.vis-tooltip-sizing-clone table th.row-bucket {
+  word-break: break-all;
+}
+.vis-tooltip-header {
+  margin: 0 0 8px 0;
+  padding: 4px 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 1.5;
+}
+.vis-tooltip-header:last-child {
+  margin-bottom: 0;
+}
+.vis-tooltip-header + * {
+  margin-top: 8px;
+}
+.vis-tooltip-header-icon {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  padding-right: 8px;
+}
+.vis-tooltip-header-text {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 200px;
+      -ms-flex: 1 1 200px;
+          flex: 1 1 200px;
+}
+.vis-tooltip-sizing-clone {
+  visibility: hidden;
+  position: fixed;
+  top: -500px;
+  left: -500px;
+}
+.vis-alerts {
+  position: relative;
+}
+.vis-alerts-tray {
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  right: 0px;
+  list-style: none;
+  padding: 0;
+  transition-property: opacity;
+  transition-delay: 50ms;
+  transition-duration: 50ms;
+}
+.vis-alerts-icon {
+  margin: 0;
+  padding: 0 10px;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+              -ms-grid-row-align: center;
+          align-self: center;
+}
+.vis-alerts-text {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  margin: 0;
+  padding: 0;
+}
+.vis-alerts-close {
+  cursor: pointer;
+}
+.vis-alert {
+  margin: 0 10px 10px;
+  padding: 5px 10px 5px 5px;
+  color: #ffffff;
+  border-radius: 4px;
+  border: 1px solid;
+  border-color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.vis-alert-success {
+  background-color: rgba(49, 196, 113, 0.75);
+  border-color: #279b59;
+  color: #ffffff;
+}
+.vis-alert-success hr {
+  border-top-color: #22874e;
+}
+.vis-alert-success .alert-link {
+  color: #e6e6e6;
+}
+.vis-alert-info {
+  background-color: rgba(31, 107, 122, 0.75);
+  border-color: #154751;
+  color: #ffffff;
+}
+.vis-alert-info hr {
+  border-top-color: #0f353d;
+}
+.vis-alert-info .alert-link {
+  color: #e6e6e6;
+}
+.vis-alert-warning {
+  background-color: rgba(243, 156, 18, 0.75);
+  border-color: #c87f0a;
+  color: #ffffff;
+}
+.vis-alert-warning hr {
+  border-top-color: #b06f09;
+}
+.vis-alert-warning .alert-link {
+  color: #e6e6e6;
+}
+.vis-alert-danger {
+  background-color: rgba(163, 0, 0, 0.75);
+  border-color: #700000;
+  color: #ffffff;
+}
+.vis-alert-danger hr {
+  border-top-color: #560000;
+}
+.vis-alert-danger .alert-link {
+  color: #e6e6e6;
+}
+.timelion-interval-custom {
+  width: 60px;
+}
+.timelion-interval-custom-compact {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.timelion-interval-presets {
+  width: 90px;
+}
+.timelion-interval-presets-compact {
+  width: 10px;
+  padding-left: 0;
+  border-left: none;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.chart-top-title {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0;
+      -ms-flex: 0;
+          flex: 0;
+  text-align: center;
+  font-weight: bold;
+  font-size: 11px;
+}
+.chart-canvas {
+  min-width: 100%;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow: hidden;
+}
+.timelionLegendCaption {
+  padding: 0px;
+  color: #545454;
+  white-space: nowrap;
+  font-weight: bold;
+}
+.tab-dashboard.theme-dark .timelionLegendCaption {
+  color: #aaaaaa;
+}
+.tab-dashboard.theme-dark .ngLegendValue {
+  color: #aaaaaa;
+}
+.tab-dashboard.theme-dark .flot-tick-label {
+  color: #aaaaaa;
+}
+.timelionExpressionInput {
+  cursor: text !important;
+}
+.suggestions {
+  background-color: #ffffff;
+  color: #2D2D2D;
+  border: 1px solid #D9D9D9;
+  border-top: 2px solid #D9D9D9;
+  border-radius: 0px 0px 4px 4px !important;
+  z-index: 10000;
+  max-height: 378px;
+  overflow-y: auto;
+  box-shadow: 0 5px 22px rgba(0, 0, 0, 0.25);
+}
+.suggestions .suggestion {
+  border-bottom: 1px solid #D9D9D9;
+  padding: 5px 20px;
+}
+.suggestions .suggestion:hover {
+  background-color: #D9D9D9;
+}
+.suggestions .suggestion.active {
+  background-color: #D9D9D9;
+}
+.suggestions .suggestion-details {
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 4px;
+}
+.suggestions .suggestion-details > table {
+  color: #2D2D2D;
+  margin-bottom: 0px;
+}
+.suggestions.suggestions-isPopover {
+  position: absolute;
+  top: 100%;
+}
+.timelion-vis {
+  min-width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.timelion-vis [chart] {
+  min-width: 100%;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.timelion-vis-editor-expression {
+  position: relative;
+}
+.timelion-vis-editor-expression .suggestions {
+  position: absolute;
+}
+/**
+ * 1. The local nav contains tooltips which should pop over the filter bar.
+ * 2. The filter and local nav components should always appear above the dashboard grid items.
+ * 3. The filter and local nav components should always appear above the discover content.
+ * 4. The sidebar collapser button should appear above the main Discover content but below the top elements.
+ */
+/* 1 */
+/* 1 */
+/* 2 */
+/* 3 */
+/* 4 */
+.chart-top-title {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0;
+      -ms-flex: 0;
+          flex: 0;
+  text-align: center;
+  font-weight: bold;
+  font-size: 11px;
+}
+.chart-canvas {
+  min-width: 100%;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow: hidden;
+}
+.timelionLegendCaption {
+  padding: 0px;
+  color: #545454;
+  white-space: nowrap;
+  font-weight: bold;
+}
+.tab-dashboard.theme-dark .timelionLegendCaption {
+  color: #aaaaaa;
+}
+.tab-dashboard.theme-dark .ngLegendValue {
+  color: #aaaaaa;
+}
+.tab-dashboard.theme-dark .flot-tick-label {
+  color: #aaaaaa;
+}
+.timelionExpressionInput {
+  cursor: text !important;
+}
+.suggestions {
+  background-color: #ffffff;
+  color: #2D2D2D;
+  border: 1px solid #D9D9D9;
+  border-top: 2px solid #D9D9D9;
+  border-radius: 0px 0px 4px 4px !important;
+  z-index: 10000;
+  max-height: 378px;
+  overflow-y: auto;
+  box-shadow: 0 5px 22px rgba(0, 0, 0, 0.25);
+}
+.suggestions .suggestion {
+  border-bottom: 1px solid #D9D9D9;
+  padding: 5px 20px;
+}
+.suggestions .suggestion:hover {
+  background-color: #D9D9D9;
+}
+.suggestions .suggestion.active {
+  background-color: #D9D9D9;
+}
+.suggestions .suggestion-details {
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 4px;
+}
+.suggestions .suggestion-details > table {
+  color: #2D2D2D;
+  margin-bottom: 0px;
+}
+.suggestions.suggestions-isPopover {
+  position: absolute;
+  top: 100%;
+}
+[chart] {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.timelion {
+  position: relative;
+}
+.timelion .config .list-group-item .container-fluid {
+  background-color: transparent;
+  padding: 0;
+}
+.timelionHelpKeyboardTipsSection:last-child {
+  margin-bottom: 0;
+}
+/**
+ * 1. Anchor suggestions beneath input.
+ * 2. Allow for option of positioning suggestions absolutely.
+ */
+.timelionExpressionInputContainer {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /* 1 */
+  position: relative;
+  /* 2 */
+}
+.timelionExpressionInput {
+  min-height: 65px;
+}
+.timelion-container {
+  margin: 20px;
+}
+.timelion-container-drawer {
+  position: fixed;
+  bottow: 0px;
+}
+.timelion-container-drawer-tab {
+  width: 100%;
+  background-color: #D9D9D9;
+}
+.timelion-subnav {
+  background-color: #D9D9D9;
+  margin: 0px;
+}
+.timelion-stats {
+  font-weight: normal;
+}
+.timelion-buttons {
+  position: absolute;
+  right: 0px;
+  display: inline-block;
+  padding: 5px 20px;
+  background-color: #E4E4E4;
+  border-bottom-left-radius: 4px;
+}
+.timelion-buttons a {
+  margin: 5px;
+  color: #000;
+}
+[ng-click] {
+  cursor: pointer;
+}
+.chart-container {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  box-sizing: border-box;
+  border: 2px dashed transparent;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  margin-bottom: 10px;
+}
+.chart-container.active {
+  border-color: #ccc;
+}
+.chart-container.running {
+  opacity: 0.50;
+}
+timelion-interval {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.timelionFunctionsDropdownContent {
+  height: 310px;
+  overflow-y: auto;
+}
+.timelionFunctionsTable {
+  background-color: white;
+}
+.timelionFunctionsTableRow:hover {
+  background-color: #f9f9f9;
+}
+/**
+ * 1. Override bootstrap .table styles.
+ */
+.timelionFunctionDetailsTable {
+  background-color: #f9f9f9 !important;
+}
+.doc-container-content {
+  position: relative;
+}
+.doc-container-buttons {
+  position: relative;
+  text-align: center;
+  height: 40px;
+}
+.doc-container-buttons .btn-doc-prev {
+  position: absolute;
+  left: 0px;
+}
+.doc-container-buttons .btn-doc-next {
+  position: absolute;
+  right: 0px;
+}
+.cell-actions {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  line-height: 10px;
+}
+.cell-actions > .cell-action,
+.cell-actions > .cell-id {
+  display: inline-block;
+  font-size: 10px;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  border: 1px solid #666;
+  padding: 3px;
+  font-weight: bold;
+  background-color: #ccc;
+  opacity: 0.50;
+  z-index: 10;
+}
+.cell-actions .cell-action {
+  opacity: 0;
+}
+.cell-actions .cell-action:focus {
+  opacity: 1;
+}
+.chart-container:hover .cell-action {
+  opacity: 0.50;
+}
+.chart-container:hover .cell-action:hover {
+  opacity: 1;
+}
+.legendLabel {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow-x: hidden;
+}
+.ngLegendValue:focus,
+.ngLegendValue:hover {
+  text-decoration: underline;
+}
+.ngLegendValueNumber {
+  margin-left: 5px;
+  margin-right: 5px;
+  font-weight: bold;
+}

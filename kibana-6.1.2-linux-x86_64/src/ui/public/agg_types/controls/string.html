@@ -1,0 +1,11 @@
+<div class="form-group">
+  <label for="visEditorStringInput{{agg.id}}{{aggParam.name}}">{{ aggParam.name | label }}</label>
+  <div>
+    <input
+      type="text"
+      id="visEditorStringInput{{agg.id}}{{aggParam.name}}"
+      ng-model="agg.params[aggParam.name]"
+      class="form-control"
+    >
+  </div>
+</div>

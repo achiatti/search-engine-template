@@ -1,0 +1,358 @@
+[2018-01-21T11:57:17,095][INFO ][o.e.n.Node               ] [] initializing ...
+[2018-01-21T11:57:17,163][INFO ][o.e.e.NodeEnvironment    ] [hyp3VaJ] using [1] data paths, mounts [[/data (/dev/mapper/centos-data)]], net usable_space [370.9gb], net total_space [371gb], types [xfs]
+[2018-01-21T11:57:17,164][INFO ][o.e.e.NodeEnvironment    ] [hyp3VaJ] heap size [989.8mb], compressed ordinary object pointers [true]
+[2018-01-21T11:57:17,165][INFO ][o.e.n.Node               ] node name [hyp3VaJ] derived from node ID [hyp3VaJRRXSb9xP3beSfJg]; set [node.name] to override
+[2018-01-21T11:57:17,165][INFO ][o.e.n.Node               ] version[6.1.2], pid[29540], build[5b1fea5/2018-01-10T02:35:59.208Z], OS[Linux/3.10.0-693.11.6.el7.x86_64/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_144/25.144-b01]
+[2018-01-21T11:57:17,165][INFO ][o.e.n.Node               ] JVM arguments [-Xms1g, -Xmx1g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -XX:+HeapDumpOnOutOfMemoryError, -Des.path.home=/data/ist441/team1/indexer/elasticsearch-6.1.2, -Des.path.conf=/data/ist441/team1/indexer/elasticsearch-6.1.2/config]
+[2018-01-21T11:57:17,947][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [aggs-matrix-stats]
+[2018-01-21T11:57:17,948][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [analysis-common]
+[2018-01-21T11:57:17,948][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [ingest-common]
+[2018-01-21T11:57:17,949][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [lang-expression]
+[2018-01-21T11:57:17,949][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [lang-mustache]
+[2018-01-21T11:57:17,949][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [lang-painless]
+[2018-01-21T11:57:17,949][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [mapper-extras]
+[2018-01-21T11:57:17,949][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [parent-join]
+[2018-01-21T11:57:17,949][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [percolator]
+[2018-01-21T11:57:17,949][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [reindex]
+[2018-01-21T11:57:17,949][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [repository-url]
+[2018-01-21T11:57:17,950][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [transport-netty4]
+[2018-01-21T11:57:17,950][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [tribe]
+[2018-01-21T11:57:17,950][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] no plugins loaded
+[2018-01-21T11:57:19,056][INFO ][o.e.d.DiscoveryModule    ] [hyp3VaJ] using discovery type [zen]
+[2018-01-21T11:57:19,583][INFO ][o.e.n.Node               ] initialized
+[2018-01-21T11:57:19,583][INFO ][o.e.n.Node               ] [hyp3VaJ] starting ...
+[2018-01-21T11:57:19,695][INFO ][o.e.t.TransportService   ] [hyp3VaJ] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
+[2018-01-21T11:57:19,704][WARN ][o.e.b.BootstrapChecks    ] [hyp3VaJ] max file descriptors [4096] for elasticsearch process is too low, increase to at least [65536]
+[2018-01-21T11:57:22,764][INFO ][o.e.c.s.MasterService    ] [hyp3VaJ] zen-disco-elected-as-master ([0] nodes joined), reason: new_master {hyp3VaJ}{hyp3VaJRRXSb9xP3beSfJg}{bN1NeFT7ScGR9SFvlbWo6g}{127.0.0.1}{127.0.0.1:9300}
+[2018-01-21T11:57:22,772][INFO ][o.e.c.s.ClusterApplierService] [hyp3VaJ] new_master {hyp3VaJ}{hyp3VaJRRXSb9xP3beSfJg}{bN1NeFT7ScGR9SFvlbWo6g}{127.0.0.1}{127.0.0.1:9300}, reason: apply cluster state (from master [master {hyp3VaJ}{hyp3VaJRRXSb9xP3beSfJg}{bN1NeFT7ScGR9SFvlbWo6g}{127.0.0.1}{127.0.0.1:9300} committed version [1] source [zen-disco-elected-as-master ([0] nodes joined)]])
+[2018-01-21T11:57:22,800][INFO ][o.e.h.n.Netty4HttpServerTransport] [hyp3VaJ] publish_address {127.0.0.1:9200}, bound_addresses {[::1]:9200}, {127.0.0.1:9200}
+[2018-01-21T11:57:22,800][INFO ][o.e.n.Node               ] [hyp3VaJ] started
+[2018-01-21T11:57:22,822][INFO ][o.e.g.GatewayService     ] [hyp3VaJ] recovered [0] indices into cluster_state
+[2018-01-21T12:04:07,920][INFO ][o.e.n.Node               ] [hyp3VaJ] stopping ...
+[2018-01-21T12:04:08,035][INFO ][o.e.n.Node               ] [hyp3VaJ] stopped
+[2018-01-21T12:04:08,035][INFO ][o.e.n.Node               ] [hyp3VaJ] closing ...
+[2018-01-21T12:04:08,046][INFO ][o.e.n.Node               ] [hyp3VaJ] closed
+[2018-01-21T12:10:55,546][INFO ][o.e.n.Node               ] [] initializing ...
+[2018-01-21T12:10:55,618][INFO ][o.e.e.NodeEnvironment    ] [hyp3VaJ] using [1] data paths, mounts [[/data (/dev/mapper/centos-data)]], net usable_space [370.9gb], net total_space [371gb], types [xfs]
+[2018-01-21T12:10:55,618][INFO ][o.e.e.NodeEnvironment    ] [hyp3VaJ] heap size [989.8mb], compressed ordinary object pointers [true]
+[2018-01-21T12:10:55,620][INFO ][o.e.n.Node               ] node name [hyp3VaJ] derived from node ID [hyp3VaJRRXSb9xP3beSfJg]; set [node.name] to override
+[2018-01-21T12:10:55,620][INFO ][o.e.n.Node               ] version[6.1.2], pid[30040], build[5b1fea5/2018-01-10T02:35:59.208Z], OS[Linux/3.10.0-693.11.6.el7.x86_64/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_144/25.144-b01]
+[2018-01-21T12:10:55,620][INFO ][o.e.n.Node               ] JVM arguments [-Xms1g, -Xmx1g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -XX:+HeapDumpOnOutOfMemoryError, -Des.path.home=/data/ist441/team1/indexer/elasticsearch-6.1.2, -Des.path.conf=/data/ist441/team1/indexer/elasticsearch-6.1.2/config]
+[2018-01-21T12:10:56,395][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [aggs-matrix-stats]
+[2018-01-21T12:10:56,396][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [analysis-common]
+[2018-01-21T12:10:56,396][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [ingest-common]
+[2018-01-21T12:10:56,396][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [lang-expression]
+[2018-01-21T12:10:56,396][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [lang-mustache]
+[2018-01-21T12:10:56,396][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [lang-painless]
+[2018-01-21T12:10:56,396][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [mapper-extras]
+[2018-01-21T12:10:56,397][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [parent-join]
+[2018-01-21T12:10:56,397][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [percolator]
+[2018-01-21T12:10:56,397][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [reindex]
+[2018-01-21T12:10:56,397][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [repository-url]
+[2018-01-21T12:10:56,397][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [transport-netty4]
+[2018-01-21T12:10:56,397][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [tribe]
+[2018-01-21T12:10:56,398][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] no plugins loaded
+[2018-01-21T12:10:57,549][INFO ][o.e.d.DiscoveryModule    ] [hyp3VaJ] using discovery type [zen]
+[2018-01-21T12:10:58,064][INFO ][o.e.n.Node               ] initialized
+[2018-01-21T12:10:58,064][INFO ][o.e.n.Node               ] [hyp3VaJ] starting ...
+[2018-01-21T12:10:58,171][INFO ][o.e.t.TransportService   ] [hyp3VaJ] publish_address {130.203.135.65:9300}, bound_addresses {130.203.135.65:9300}
+[2018-01-21T12:10:58,180][INFO ][o.e.b.BootstrapChecks    ] [hyp3VaJ] bound or publishing to a non-loopback address, enforcing bootstrap checks
+[2018-01-21T12:10:58,183][ERROR][o.e.b.Bootstrap          ] [hyp3VaJ] node validation exception
+[1] bootstrap checks failed
+[1]: max file descriptors [4096] for elasticsearch process is too low, increase to at least [65536]
+[2018-01-21T12:10:58,186][INFO ][o.e.n.Node               ] [hyp3VaJ] stopping ...
+[2018-01-21T12:10:58,227][INFO ][o.e.n.Node               ] [hyp3VaJ] stopped
+[2018-01-21T12:10:58,227][INFO ][o.e.n.Node               ] [hyp3VaJ] closing ...
+[2018-01-21T12:10:58,244][INFO ][o.e.n.Node               ] [hyp3VaJ] closed
+[2018-01-21T12:11:34,783][INFO ][o.e.n.Node               ] [] initializing ...
+[2018-01-21T12:11:34,855][INFO ][o.e.e.NodeEnvironment    ] [hyp3VaJ] using [1] data paths, mounts [[/data (/dev/mapper/centos-data)]], net usable_space [370.9gb], net total_space [371gb], types [xfs]
+[2018-01-21T12:11:34,856][INFO ][o.e.e.NodeEnvironment    ] [hyp3VaJ] heap size [989.8mb], compressed ordinary object pointers [true]
+[2018-01-21T12:11:34,857][INFO ][o.e.n.Node               ] node name [hyp3VaJ] derived from node ID [hyp3VaJRRXSb9xP3beSfJg]; set [node.name] to override
+[2018-01-21T12:11:34,858][INFO ][o.e.n.Node               ] version[6.1.2], pid[30336], build[5b1fea5/2018-01-10T02:35:59.208Z], OS[Linux/3.10.0-693.11.6.el7.x86_64/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_144/25.144-b01]
+[2018-01-21T12:11:34,858][INFO ][o.e.n.Node               ] JVM arguments [-Xms1g, -Xmx1g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -XX:+HeapDumpOnOutOfMemoryError, -Des.path.home=/data/ist441/team1/indexer/elasticsearch-6.1.2, -Des.path.conf=/data/ist441/team1/indexer/elasticsearch-6.1.2/config]
+[2018-01-21T12:11:35,559][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [aggs-matrix-stats]
+[2018-01-21T12:11:35,559][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [analysis-common]
+[2018-01-21T12:11:35,559][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [ingest-common]
+[2018-01-21T12:11:35,560][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [lang-expression]
+[2018-01-21T12:11:35,560][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [lang-mustache]
+[2018-01-21T12:11:35,560][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [lang-painless]
+[2018-01-21T12:11:35,560][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [mapper-extras]
+[2018-01-21T12:11:35,560][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [parent-join]
+[2018-01-21T12:11:35,560][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [percolator]
+[2018-01-21T12:11:35,560][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [reindex]
+[2018-01-21T12:11:35,560][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [repository-url]
+[2018-01-21T12:11:35,561][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [transport-netty4]
+[2018-01-21T12:11:35,561][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [tribe]
+[2018-01-21T12:11:35,561][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] no plugins loaded
+[2018-01-21T12:11:36,701][INFO ][o.e.d.DiscoveryModule    ] [hyp3VaJ] using discovery type [zen]
+[2018-01-21T12:11:37,238][INFO ][o.e.n.Node               ] initialized
+[2018-01-21T12:11:37,238][INFO ][o.e.n.Node               ] [hyp3VaJ] starting ...
+[2018-01-21T12:11:37,345][INFO ][o.e.t.TransportService   ] [hyp3VaJ] publish_address {130.203.135.65:9300}, bound_addresses {130.203.135.65:9300}
+[2018-01-21T12:11:37,353][INFO ][o.e.b.BootstrapChecks    ] [hyp3VaJ] bound or publishing to a non-loopback address, enforcing bootstrap checks
+[2018-01-21T12:11:37,356][ERROR][o.e.b.Bootstrap          ] [hyp3VaJ] node validation exception
+[1] bootstrap checks failed
+[1]: max file descriptors [4096] for elasticsearch process is too low, increase to at least [65536]
+[2018-01-21T12:11:37,359][INFO ][o.e.n.Node               ] [hyp3VaJ] stopping ...
+[2018-01-21T12:11:37,395][INFO ][o.e.n.Node               ] [hyp3VaJ] stopped
+[2018-01-21T12:11:37,396][INFO ][o.e.n.Node               ] [hyp3VaJ] closing ...
+[2018-01-21T12:11:37,408][INFO ][o.e.n.Node               ] [hyp3VaJ] closed
+[2018-01-21T12:12:12,228][INFO ][o.e.n.Node               ] [] initializing ...
+[2018-01-21T12:12:12,302][INFO ][o.e.e.NodeEnvironment    ] [hyp3VaJ] using [1] data paths, mounts [[/data (/dev/mapper/centos-data)]], net usable_space [370.9gb], net total_space [371gb], types [xfs]
+[2018-01-21T12:12:12,303][INFO ][o.e.e.NodeEnvironment    ] [hyp3VaJ] heap size [989.8mb], compressed ordinary object pointers [true]
+[2018-01-21T12:12:12,305][INFO ][o.e.n.Node               ] node name [hyp3VaJ] derived from node ID [hyp3VaJRRXSb9xP3beSfJg]; set [node.name] to override
+[2018-01-21T12:12:12,305][INFO ][o.e.n.Node               ] version[6.1.2], pid[30635], build[5b1fea5/2018-01-10T02:35:59.208Z], OS[Linux/3.10.0-693.11.6.el7.x86_64/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_144/25.144-b01]
+[2018-01-21T12:12:12,305][INFO ][o.e.n.Node               ] JVM arguments [-Xms1g, -Xmx1g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -XX:+HeapDumpOnOutOfMemoryError, -Des.path.home=/data/ist441/team1/indexer/elasticsearch-6.1.2, -Des.path.conf=/data/ist441/team1/indexer/elasticsearch-6.1.2/config]
+[2018-01-21T12:12:13,094][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [aggs-matrix-stats]
+[2018-01-21T12:12:13,095][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [analysis-common]
+[2018-01-21T12:12:13,095][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [ingest-common]
+[2018-01-21T12:12:13,095][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [lang-expression]
+[2018-01-21T12:12:13,096][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [lang-mustache]
+[2018-01-21T12:12:13,096][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [lang-painless]
+[2018-01-21T12:12:13,096][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [mapper-extras]
+[2018-01-21T12:12:13,096][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [parent-join]
+[2018-01-21T12:12:13,096][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [percolator]
+[2018-01-21T12:12:13,097][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [reindex]
+[2018-01-21T12:12:13,097][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [repository-url]
+[2018-01-21T12:12:13,097][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [transport-netty4]
+[2018-01-21T12:12:13,097][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [tribe]
+[2018-01-21T12:12:13,098][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] no plugins loaded
+[2018-01-21T12:12:14,184][INFO ][o.e.d.DiscoveryModule    ] [hyp3VaJ] using discovery type [zen]
+[2018-01-21T12:12:14,679][INFO ][o.e.n.Node               ] initialized
+[2018-01-21T12:12:14,679][INFO ][o.e.n.Node               ] [hyp3VaJ] starting ...
+[2018-01-21T12:12:14,791][INFO ][o.e.t.TransportService   ] [hyp3VaJ] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
+[2018-01-21T12:12:14,800][WARN ][o.e.b.BootstrapChecks    ] [hyp3VaJ] max file descriptors [4096] for elasticsearch process is too low, increase to at least [65536]
+[2018-01-21T12:12:17,861][INFO ][o.e.c.s.MasterService    ] [hyp3VaJ] zen-disco-elected-as-master ([0] nodes joined), reason: new_master {hyp3VaJ}{hyp3VaJRRXSb9xP3beSfJg}{wb5wydrgT3CSDNewOM4p9g}{127.0.0.1}{127.0.0.1:9300}
+[2018-01-21T12:12:17,869][INFO ][o.e.c.s.ClusterApplierService] [hyp3VaJ] new_master {hyp3VaJ}{hyp3VaJRRXSb9xP3beSfJg}{wb5wydrgT3CSDNewOM4p9g}{127.0.0.1}{127.0.0.1:9300}, reason: apply cluster state (from master [master {hyp3VaJ}{hyp3VaJRRXSb9xP3beSfJg}{wb5wydrgT3CSDNewOM4p9g}{127.0.0.1}{127.0.0.1:9300} committed version [1] source [zen-disco-elected-as-master ([0] nodes joined)]])
+[2018-01-21T12:12:17,893][INFO ][o.e.h.n.Netty4HttpServerTransport] [hyp3VaJ] publish_address {127.0.0.1:9200}, bound_addresses {[::1]:9200}, {127.0.0.1:9200}
+[2018-01-21T12:12:17,894][INFO ][o.e.n.Node               ] [hyp3VaJ] started
+[2018-01-21T12:12:17,902][INFO ][o.e.g.GatewayService     ] [hyp3VaJ] recovered [0] indices into cluster_state
+[2018-01-21T12:14:36,952][INFO ][o.e.n.Node               ] [hyp3VaJ] stopping ...
+[2018-01-21T12:14:37,058][INFO ][o.e.n.Node               ] [hyp3VaJ] stopped
+[2018-01-21T12:14:37,058][INFO ][o.e.n.Node               ] [hyp3VaJ] closing ...
+[2018-01-21T12:14:37,068][INFO ][o.e.n.Node               ] [hyp3VaJ] closed
+[2018-01-21T12:19:42,008][INFO ][o.e.n.Node               ] [] initializing ...
+[2018-01-21T12:19:42,079][INFO ][o.e.e.NodeEnvironment    ] [hyp3VaJ] using [1] data paths, mounts [[/data (/dev/mapper/centos-data)]], net usable_space [370.9gb], net total_space [371gb], types [xfs]
+[2018-01-21T12:19:42,079][INFO ][o.e.e.NodeEnvironment    ] [hyp3VaJ] heap size [989.8mb], compressed ordinary object pointers [true]
+[2018-01-21T12:19:42,081][INFO ][o.e.n.Node               ] node name [hyp3VaJ] derived from node ID [hyp3VaJRRXSb9xP3beSfJg]; set [node.name] to override
+[2018-01-21T12:19:42,081][INFO ][o.e.n.Node               ] version[6.1.2], pid[31170], build[5b1fea5/2018-01-10T02:35:59.208Z], OS[Linux/3.10.0-693.11.6.el7.x86_64/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_144/25.144-b01]
+[2018-01-21T12:19:42,082][INFO ][o.e.n.Node               ] JVM arguments [-Xms1g, -Xmx1g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -XX:+HeapDumpOnOutOfMemoryError, -Des.path.home=/data/ist441/team1/indexer/elasticsearch-6.1.2, -Des.path.conf=/data/ist441/team1/indexer/elasticsearch-6.1.2/config]
+[2018-01-21T12:19:42,802][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [aggs-matrix-stats]
+[2018-01-21T12:19:42,802][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [analysis-common]
+[2018-01-21T12:19:42,803][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [ingest-common]
+[2018-01-21T12:19:42,803][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [lang-expression]
+[2018-01-21T12:19:42,803][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [lang-mustache]
+[2018-01-21T12:19:42,803][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [lang-painless]
+[2018-01-21T12:19:42,803][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [mapper-extras]
+[2018-01-21T12:19:42,803][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [parent-join]
+[2018-01-21T12:19:42,803][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [percolator]
+[2018-01-21T12:19:42,804][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [reindex]
+[2018-01-21T12:19:42,804][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [repository-url]
+[2018-01-21T12:19:42,804][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [transport-netty4]
+[2018-01-21T12:19:42,805][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [tribe]
+[2018-01-21T12:19:42,805][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] no plugins loaded
+[2018-01-21T12:19:43,929][INFO ][o.e.d.DiscoveryModule    ] [hyp3VaJ] using discovery type [zen]
+[2018-01-21T12:19:44,515][INFO ][o.e.n.Node               ] initialized
+[2018-01-21T12:19:44,516][INFO ][o.e.n.Node               ] [hyp3VaJ] starting ...
+[2018-01-21T12:19:44,622][INFO ][o.e.t.TransportService   ] [hyp3VaJ] publish_address {130.203.135.65:9300}, bound_addresses {130.203.135.65:9300}
+[2018-01-21T12:19:44,631][INFO ][o.e.b.BootstrapChecks    ] [hyp3VaJ] bound or publishing to a non-loopback address, enforcing bootstrap checks
+[2018-01-21T12:19:44,635][ERROR][o.e.b.Bootstrap          ] [hyp3VaJ] node validation exception
+[1] bootstrap checks failed
+[1]: max file descriptors [4096] for elasticsearch process is too low, increase to at least [65536]
+[2018-01-21T12:19:44,638][INFO ][o.e.n.Node               ] [hyp3VaJ] stopping ...
+[2018-01-21T12:19:44,687][INFO ][o.e.n.Node               ] [hyp3VaJ] stopped
+[2018-01-21T12:19:44,687][INFO ][o.e.n.Node               ] [hyp3VaJ] closing ...
+[2018-01-21T12:19:44,698][INFO ][o.e.n.Node               ] [hyp3VaJ] closed
+[2018-01-21T12:20:58,255][INFO ][o.e.n.Node               ] [] initializing ...
+[2018-01-21T12:20:58,354][INFO ][o.e.e.NodeEnvironment    ] [hyp3VaJ] using [1] data paths, mounts [[/data (/dev/mapper/centos-data)]], net usable_space [370.9gb], net total_space [371gb], types [xfs]
+[2018-01-21T12:20:58,354][INFO ][o.e.e.NodeEnvironment    ] [hyp3VaJ] heap size [989.8mb], compressed ordinary object pointers [true]
+[2018-01-21T12:20:58,355][INFO ][o.e.n.Node               ] node name [hyp3VaJ] derived from node ID [hyp3VaJRRXSb9xP3beSfJg]; set [node.name] to override
+[2018-01-21T12:20:58,356][INFO ][o.e.n.Node               ] version[6.1.2], pid[31470], build[5b1fea5/2018-01-10T02:35:59.208Z], OS[Linux/3.10.0-693.11.6.el7.x86_64/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_144/25.144-b01]
+[2018-01-21T12:20:58,356][INFO ][o.e.n.Node               ] JVM arguments [-Xms1g, -Xmx1g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -XX:+HeapDumpOnOutOfMemoryError, -Des.path.home=/data/ist441/team1/indexer/elasticsearch-6.1.2, -Des.path.conf=/data/ist441/team1/indexer/elasticsearch-6.1.2/config]
+[2018-01-21T12:20:59,099][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [aggs-matrix-stats]
+[2018-01-21T12:20:59,099][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [analysis-common]
+[2018-01-21T12:20:59,100][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [ingest-common]
+[2018-01-21T12:20:59,100][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [lang-expression]
+[2018-01-21T12:20:59,100][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [lang-mustache]
+[2018-01-21T12:20:59,100][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [lang-painless]
+[2018-01-21T12:20:59,100][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [mapper-extras]
+[2018-01-21T12:20:59,100][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [parent-join]
+[2018-01-21T12:20:59,100][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [percolator]
+[2018-01-21T12:20:59,101][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [reindex]
+[2018-01-21T12:20:59,101][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [repository-url]
+[2018-01-21T12:20:59,101][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [transport-netty4]
+[2018-01-21T12:20:59,101][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [tribe]
+[2018-01-21T12:20:59,102][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] no plugins loaded
+[2018-01-21T12:21:00,201][INFO ][o.e.d.DiscoveryModule    ] [hyp3VaJ] using discovery type [zen]
+[2018-01-21T12:21:00,708][INFO ][o.e.n.Node               ] initialized
+[2018-01-21T12:21:00,709][INFO ][o.e.n.Node               ] [hyp3VaJ] starting ...
+[2018-01-21T12:21:00,814][INFO ][o.e.t.TransportService   ] [hyp3VaJ] publish_address {130.203.135.65:9300}, bound_addresses {130.203.135.65:9300}
+[2018-01-21T12:21:00,823][INFO ][o.e.b.BootstrapChecks    ] [hyp3VaJ] bound or publishing to a non-loopback address, enforcing bootstrap checks
+[2018-01-21T12:21:00,826][ERROR][o.e.b.Bootstrap          ] [hyp3VaJ] node validation exception
+[1] bootstrap checks failed
+[1]: max file descriptors [4096] for elasticsearch process is too low, increase to at least [65536]
+[2018-01-21T12:21:00,829][INFO ][o.e.n.Node               ] [hyp3VaJ] stopping ...
+[2018-01-21T12:21:00,870][INFO ][o.e.n.Node               ] [hyp3VaJ] stopped
+[2018-01-21T12:21:00,870][INFO ][o.e.n.Node               ] [hyp3VaJ] closing ...
+[2018-01-21T12:21:00,910][INFO ][o.e.n.Node               ] [hyp3VaJ] closed
+[2018-01-21T12:21:28,626][INFO ][o.e.n.Node               ] [] initializing ...
+[2018-01-21T12:21:28,698][INFO ][o.e.e.NodeEnvironment    ] [hyp3VaJ] using [1] data paths, mounts [[/data (/dev/mapper/centos-data)]], net usable_space [370.9gb], net total_space [371gb], types [xfs]
+[2018-01-21T12:21:28,699][INFO ][o.e.e.NodeEnvironment    ] [hyp3VaJ] heap size [989.8mb], compressed ordinary object pointers [true]
+[2018-01-21T12:21:28,700][INFO ][o.e.n.Node               ] node name [hyp3VaJ] derived from node ID [hyp3VaJRRXSb9xP3beSfJg]; set [node.name] to override
+[2018-01-21T12:21:28,700][INFO ][o.e.n.Node               ] version[6.1.2], pid[31765], build[5b1fea5/2018-01-10T02:35:59.208Z], OS[Linux/3.10.0-693.11.6.el7.x86_64/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_144/25.144-b01]
+[2018-01-21T12:21:28,701][INFO ][o.e.n.Node               ] JVM arguments [-Xms1g, -Xmx1g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -XX:+HeapDumpOnOutOfMemoryError, -Des.path.home=/data/ist441/team1/indexer/elasticsearch-6.1.2, -Des.path.conf=/data/ist441/team1/indexer/elasticsearch-6.1.2/config]
+[2018-01-21T12:21:29,416][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [aggs-matrix-stats]
+[2018-01-21T12:21:29,416][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [analysis-common]
+[2018-01-21T12:21:29,416][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [ingest-common]
+[2018-01-21T12:21:29,416][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [lang-expression]
+[2018-01-21T12:21:29,417][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [lang-mustache]
+[2018-01-21T12:21:29,417][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [lang-painless]
+[2018-01-21T12:21:29,417][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [mapper-extras]
+[2018-01-21T12:21:29,417][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [parent-join]
+[2018-01-21T12:21:29,417][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [percolator]
+[2018-01-21T12:21:29,418][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [reindex]
+[2018-01-21T12:21:29,418][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [repository-url]
+[2018-01-21T12:21:29,418][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [transport-netty4]
+[2018-01-21T12:21:29,418][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] loaded module [tribe]
+[2018-01-21T12:21:29,419][INFO ][o.e.p.PluginsService     ] [hyp3VaJ] no plugins loaded
+[2018-01-21T12:21:30,546][INFO ][o.e.d.DiscoveryModule    ] [hyp3VaJ] using discovery type [zen]
+[2018-01-21T12:21:31,092][INFO ][o.e.n.Node               ] initialized
+[2018-01-21T12:21:31,093][INFO ][o.e.n.Node               ] [hyp3VaJ] starting ...
+[2018-01-21T12:21:31,218][INFO ][o.e.t.TransportService   ] [hyp3VaJ] publish_address {130.203.135.65:9300}, bound_addresses {130.203.135.65:9300}
+[2018-01-21T12:21:31,227][INFO ][o.e.b.BootstrapChecks    ] [hyp3VaJ] bound or publishing to a non-loopback address, enforcing bootstrap checks
+[2018-01-21T12:21:31,231][ERROR][o.e.b.Bootstrap          ] [hyp3VaJ] node validation exception
+[1] bootstrap checks failed
+[1]: max file descriptors [4096] for elasticsearch process is too low, increase to at least [65536]
+[2018-01-21T12:21:31,234][INFO ][o.e.n.Node               ] [hyp3VaJ] stopping ...
+[2018-01-21T12:21:31,274][INFO ][o.e.n.Node               ] [hyp3VaJ] stopped
+[2018-01-21T12:21:31,274][INFO ][o.e.n.Node               ] [hyp3VaJ] closing ...
+[2018-01-21T12:21:31,311][INFO ][o.e.n.Node               ] [hyp3VaJ] closed
+[2018-01-21T13:01:31,272][INFO ][o.e.n.Node               ] [$HOSTNAME] initializing ...
+[2018-01-21T13:01:31,341][INFO ][o.e.e.NodeEnvironment    ] [$HOSTNAME] using [1] data paths, mounts [[/data (/dev/mapper/centos-data)]], net usable_space [370.9gb], net total_space [371gb], types [xfs]
+[2018-01-21T13:01:31,341][INFO ][o.e.e.NodeEnvironment    ] [$HOSTNAME] heap size [989.8mb], compressed ordinary object pointers [true]
+[2018-01-21T13:01:31,343][INFO ][o.e.n.Node               ] [$HOSTNAME] node name [$HOSTNAME], node ID [hyp3VaJRRXSb9xP3beSfJg]
+[2018-01-21T13:01:31,343][INFO ][o.e.n.Node               ] [$HOSTNAME] version[6.1.2], pid[32091], build[5b1fea5/2018-01-10T02:35:59.208Z], OS[Linux/3.10.0-693.11.6.el7.x86_64/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_144/25.144-b01]
+[2018-01-21T13:01:31,343][INFO ][o.e.n.Node               ] [$HOSTNAME] JVM arguments [-Xms1g, -Xmx1g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -XX:+HeapDumpOnOutOfMemoryError, -Des.path.home=/data/ist441/team1/indexer/elasticsearch-6.1.2, -Des.path.conf=/data/ist441/team1/indexer/elasticsearch-6.1.2/config]
+[2018-01-21T13:01:32,097][INFO ][o.e.p.PluginsService     ] [$HOSTNAME] loaded module [aggs-matrix-stats]
+[2018-01-21T13:01:32,098][INFO ][o.e.p.PluginsService     ] [$HOSTNAME] loaded module [analysis-common]
+[2018-01-21T13:01:32,098][INFO ][o.e.p.PluginsService     ] [$HOSTNAME] loaded module [ingest-common]
+[2018-01-21T13:01:32,098][INFO ][o.e.p.PluginsService     ] [$HOSTNAME] loaded module [lang-expression]
+[2018-01-21T13:01:32,098][INFO ][o.e.p.PluginsService     ] [$HOSTNAME] loaded module [lang-mustache]
+[2018-01-21T13:01:32,098][INFO ][o.e.p.PluginsService     ] [$HOSTNAME] loaded module [lang-painless]
+[2018-01-21T13:01:32,099][INFO ][o.e.p.PluginsService     ] [$HOSTNAME] loaded module [mapper-extras]
+[2018-01-21T13:01:32,099][INFO ][o.e.p.PluginsService     ] [$HOSTNAME] loaded module [parent-join]
+[2018-01-21T13:01:32,099][INFO ][o.e.p.PluginsService     ] [$HOSTNAME] loaded module [percolator]
+[2018-01-21T13:01:32,099][INFO ][o.e.p.PluginsService     ] [$HOSTNAME] loaded module [reindex]
+[2018-01-21T13:01:32,099][INFO ][o.e.p.PluginsService     ] [$HOSTNAME] loaded module [repository-url]
+[2018-01-21T13:01:32,099][INFO ][o.e.p.PluginsService     ] [$HOSTNAME] loaded module [transport-netty4]
+[2018-01-21T13:01:32,099][INFO ][o.e.p.PluginsService     ] [$HOSTNAME] loaded module [tribe]
+[2018-01-21T13:01:32,100][INFO ][o.e.p.PluginsService     ] [$HOSTNAME] no plugins loaded
+[2018-01-21T13:01:33,261][INFO ][o.e.d.DiscoveryModule    ] [$HOSTNAME] using discovery type [zen]
+[2018-01-21T13:01:33,851][INFO ][o.e.n.Node               ] [$HOSTNAME] initialized
+[2018-01-21T13:01:33,851][INFO ][o.e.n.Node               ] [$HOSTNAME] starting ...
+[2018-01-21T13:01:33,976][INFO ][o.e.t.TransportService   ] [$HOSTNAME] publish_address {130.203.135.65:9300}, bound_addresses {130.203.135.65:9300}
+[2018-01-21T13:01:33,985][INFO ][o.e.b.BootstrapChecks    ] [$HOSTNAME] bound or publishing to a non-loopback address, enforcing bootstrap checks
+[2018-01-21T13:01:33,988][ERROR][o.e.b.Bootstrap          ] [$HOSTNAME] node validation exception
+[1] bootstrap checks failed
+[1]: max file descriptors [4096] for elasticsearch process is too low, increase to at least [65536]
+[2018-01-21T13:01:33,992][INFO ][o.e.n.Node               ] [$HOSTNAME] stopping ...
+[2018-01-21T13:01:34,033][INFO ][o.e.n.Node               ] [$HOSTNAME] stopped
+[2018-01-21T13:01:34,034][INFO ][o.e.n.Node               ] [$HOSTNAME] closing ...
+[2018-01-21T13:01:34,048][INFO ][o.e.n.Node               ] [$HOSTNAME] closed
+[2018-01-21T13:02:27,871][INFO ][o.e.n.Node               ] [ist441giles.ist.psu.edu] initializing ...
+[2018-01-21T13:02:27,942][INFO ][o.e.e.NodeEnvironment    ] [ist441giles.ist.psu.edu] using [1] data paths, mounts [[/data (/dev/mapper/centos-data)]], net usable_space [370.9gb], net total_space [371gb], types [xfs]
+[2018-01-21T13:02:27,942][INFO ][o.e.e.NodeEnvironment    ] [ist441giles.ist.psu.edu] heap size [989.8mb], compressed ordinary object pointers [true]
+[2018-01-21T13:02:27,944][INFO ][o.e.n.Node               ] [ist441giles.ist.psu.edu] node name [ist441giles.ist.psu.edu], node ID [hyp3VaJRRXSb9xP3beSfJg]
+[2018-01-21T13:02:27,944][INFO ][o.e.n.Node               ] [ist441giles.ist.psu.edu] version[6.1.2], pid[32390], build[5b1fea5/2018-01-10T02:35:59.208Z], OS[Linux/3.10.0-693.11.6.el7.x86_64/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_144/25.144-b01]
+[2018-01-21T13:02:27,944][INFO ][o.e.n.Node               ] [ist441giles.ist.psu.edu] JVM arguments [-Xms1g, -Xmx1g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -XX:+HeapDumpOnOutOfMemoryError, -Des.path.home=/data/ist441/team1/indexer/elasticsearch-6.1.2, -Des.path.conf=/data/ist441/team1/indexer/elasticsearch-6.1.2/config]
+[2018-01-21T13:02:28,694][INFO ][o.e.p.PluginsService     ] [ist441giles.ist.psu.edu] loaded module [aggs-matrix-stats]
+[2018-01-21T13:02:28,695][INFO ][o.e.p.PluginsService     ] [ist441giles.ist.psu.edu] loaded module [analysis-common]
+[2018-01-21T13:02:28,696][INFO ][o.e.p.PluginsService     ] [ist441giles.ist.psu.edu] loaded module [ingest-common]
+[2018-01-21T13:02:28,696][INFO ][o.e.p.PluginsService     ] [ist441giles.ist.psu.edu] loaded module [lang-expression]
+[2018-01-21T13:02:28,696][INFO ][o.e.p.PluginsService     ] [ist441giles.ist.psu.edu] loaded module [lang-mustache]
+[2018-01-21T13:02:28,696][INFO ][o.e.p.PluginsService     ] [ist441giles.ist.psu.edu] loaded module [lang-painless]
+[2018-01-21T13:02:28,696][INFO ][o.e.p.PluginsService     ] [ist441giles.ist.psu.edu] loaded module [mapper-extras]
+[2018-01-21T13:02:28,696][INFO ][o.e.p.PluginsService     ] [ist441giles.ist.psu.edu] loaded module [parent-join]
+[2018-01-21T13:02:28,696][INFO ][o.e.p.PluginsService     ] [ist441giles.ist.psu.edu] loaded module [percolator]
+[2018-01-21T13:02:28,697][INFO ][o.e.p.PluginsService     ] [ist441giles.ist.psu.edu] loaded module [reindex]
+[2018-01-21T13:02:28,697][INFO ][o.e.p.PluginsService     ] [ist441giles.ist.psu.edu] loaded module [repository-url]
+[2018-01-21T13:02:28,697][INFO ][o.e.p.PluginsService     ] [ist441giles.ist.psu.edu] loaded module [transport-netty4]
+[2018-01-21T13:02:28,697][INFO ][o.e.p.PluginsService     ] [ist441giles.ist.psu.edu] loaded module [tribe]
+[2018-01-21T13:02:28,698][INFO ][o.e.p.PluginsService     ] [ist441giles.ist.psu.edu] no plugins loaded
+[2018-01-21T13:02:29,817][INFO ][o.e.d.DiscoveryModule    ] [ist441giles.ist.psu.edu] using discovery type [zen]
+[2018-01-21T13:02:30,361][INFO ][o.e.n.Node               ] [ist441giles.ist.psu.edu] initialized
+[2018-01-21T13:02:30,362][INFO ][o.e.n.Node               ] [ist441giles.ist.psu.edu] starting ...
+[2018-01-21T13:02:30,474][INFO ][o.e.t.TransportService   ] [ist441giles.ist.psu.edu] publish_address {130.203.135.65:9300}, bound_addresses {130.203.135.65:9300}
+[2018-01-21T13:02:30,482][INFO ][o.e.b.BootstrapChecks    ] [ist441giles.ist.psu.edu] bound or publishing to a non-loopback address, enforcing bootstrap checks
+[2018-01-21T13:02:30,486][ERROR][o.e.b.Bootstrap          ] [ist441giles.ist.psu.edu] node validation exception
+[1] bootstrap checks failed
+[1]: max file descriptors [4096] for elasticsearch process is too low, increase to at least [65536]
+[2018-01-21T13:02:30,489][INFO ][o.e.n.Node               ] [ist441giles.ist.psu.edu] stopping ...
+[2018-01-21T13:02:30,529][INFO ][o.e.n.Node               ] [ist441giles.ist.psu.edu] stopped
+[2018-01-21T13:02:30,529][INFO ][o.e.n.Node               ] [ist441giles.ist.psu.edu] closing ...
+[2018-01-21T13:02:30,542][INFO ][o.e.n.Node               ] [ist441giles.ist.psu.edu] closed
+[2018-01-21T13:03:36,825][INFO ][o.e.n.Node               ] [ist441giles.ist.psu.edu] initializing ...
+[2018-01-21T13:03:36,944][INFO ][o.e.e.NodeEnvironment    ] [ist441giles.ist.psu.edu] using [1] data paths, mounts [[/data (/dev/mapper/centos-data)]], net usable_space [370.9gb], net total_space [371gb], types [xfs]
+[2018-01-21T13:03:36,945][INFO ][o.e.e.NodeEnvironment    ] [ist441giles.ist.psu.edu] heap size [989.8mb], compressed ordinary object pointers [true]
+[2018-01-21T13:03:36,947][INFO ][o.e.n.Node               ] [ist441giles.ist.psu.edu] node name [ist441giles.ist.psu.edu], node ID [hyp3VaJRRXSb9xP3beSfJg]
+[2018-01-21T13:03:36,947][INFO ][o.e.n.Node               ] [ist441giles.ist.psu.edu] version[6.1.2], pid[32690], build[5b1fea5/2018-01-10T02:35:59.208Z], OS[Linux/3.10.0-693.11.6.el7.x86_64/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_144/25.144-b01]
+[2018-01-21T13:03:36,948][INFO ][o.e.n.Node               ] [ist441giles.ist.psu.edu] JVM arguments [-Xms1g, -Xmx1g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -XX:+HeapDumpOnOutOfMemoryError, -Des.path.home=/data/ist441/team1/indexer/elasticsearch-6.1.2, -Des.path.conf=/data/ist441/team1/indexer/elasticsearch-6.1.2/config]
+[2018-01-21T13:03:37,758][INFO ][o.e.p.PluginsService     ] [ist441giles.ist.psu.edu] loaded module [aggs-matrix-stats]
+[2018-01-21T13:03:37,760][INFO ][o.e.p.PluginsService     ] [ist441giles.ist.psu.edu] loaded module [analysis-common]
+[2018-01-21T13:03:37,760][INFO ][o.e.p.PluginsService     ] [ist441giles.ist.psu.edu] loaded module [ingest-common]
+[2018-01-21T13:03:37,760][INFO ][o.e.p.PluginsService     ] [ist441giles.ist.psu.edu] loaded module [lang-expression]
+[2018-01-21T13:03:37,760][INFO ][o.e.p.PluginsService     ] [ist441giles.ist.psu.edu] loaded module [lang-mustache]
+[2018-01-21T13:03:37,760][INFO ][o.e.p.PluginsService     ] [ist441giles.ist.psu.edu] loaded module [lang-painless]
+[2018-01-21T13:03:37,760][INFO ][o.e.p.PluginsService     ] [ist441giles.ist.psu.edu] loaded module [mapper-extras]
+[2018-01-21T13:03:37,760][INFO ][o.e.p.PluginsService     ] [ist441giles.ist.psu.edu] loaded module [parent-join]
+[2018-01-21T13:03:37,761][INFO ][o.e.p.PluginsService     ] [ist441giles.ist.psu.edu] loaded module [percolator]
+[2018-01-21T13:03:37,761][INFO ][o.e.p.PluginsService     ] [ist441giles.ist.psu.edu] loaded module [reindex]
+[2018-01-21T13:03:37,761][INFO ][o.e.p.PluginsService     ] [ist441giles.ist.psu.edu] loaded module [repository-url]
+[2018-01-21T13:03:37,761][INFO ][o.e.p.PluginsService     ] [ist441giles.ist.psu.edu] loaded module [transport-netty4]
+[2018-01-21T13:03:37,761][INFO ][o.e.p.PluginsService     ] [ist441giles.ist.psu.edu] loaded module [tribe]
+[2018-01-21T13:03:37,761][INFO ][o.e.p.PluginsService     ] [ist441giles.ist.psu.edu] no plugins loaded
+[2018-01-21T13:03:38,870][INFO ][o.e.d.DiscoveryModule    ] [ist441giles.ist.psu.edu] using discovery type [zen]
+[2018-01-21T13:03:39,375][INFO ][o.e.n.Node               ] [ist441giles.ist.psu.edu] initialized
+[2018-01-21T13:03:39,376][INFO ][o.e.n.Node               ] [ist441giles.ist.psu.edu] starting ...
+[2018-01-21T13:03:39,486][INFO ][o.e.t.TransportService   ] [ist441giles.ist.psu.edu] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
+[2018-01-21T13:03:39,496][WARN ][o.e.b.BootstrapChecks    ] [ist441giles.ist.psu.edu] max file descriptors [4096] for elasticsearch process is too low, increase to at least [65536]
+[2018-01-21T13:03:42,557][INFO ][o.e.c.s.MasterService    ] [ist441giles.ist.psu.edu] zen-disco-elected-as-master ([0] nodes joined), reason: new_master {ist441giles.ist.psu.edu}{hyp3VaJRRXSb9xP3beSfJg}{-i7gq9aRQOe7QBh0fGaCmA}{127.0.0.1}{127.0.0.1:9300}
+[2018-01-21T13:03:42,564][INFO ][o.e.c.s.ClusterApplierService] [ist441giles.ist.psu.edu] new_master {ist441giles.ist.psu.edu}{hyp3VaJRRXSb9xP3beSfJg}{-i7gq9aRQOe7QBh0fGaCmA}{127.0.0.1}{127.0.0.1:9300}, reason: apply cluster state (from master [master {ist441giles.ist.psu.edu}{hyp3VaJRRXSb9xP3beSfJg}{-i7gq9aRQOe7QBh0fGaCmA}{127.0.0.1}{127.0.0.1:9300} committed version [1] source [zen-disco-elected-as-master ([0] nodes joined)]])
+[2018-01-21T13:03:42,591][INFO ][o.e.h.n.Netty4HttpServerTransport] [ist441giles.ist.psu.edu] publish_address {127.0.0.1:9200}, bound_addresses {[::1]:9200}, {127.0.0.1:9200}
+[2018-01-21T13:03:42,591][INFO ][o.e.n.Node               ] [ist441giles.ist.psu.edu] started
+[2018-01-21T13:03:42,598][INFO ][o.e.g.GatewayService     ] [ist441giles.ist.psu.edu] recovered [0] indices into cluster_state
+[2018-01-21T13:06:44,542][INFO ][o.e.n.Node               ] [ist441giles.ist.psu.edu] stopping ...
+[2018-01-21T13:06:44,650][INFO ][o.e.n.Node               ] [ist441giles.ist.psu.edu] stopped
+[2018-01-21T13:06:44,651][INFO ][o.e.n.Node               ] [ist441giles.ist.psu.edu] closing ...
+[2018-01-21T13:06:44,667][INFO ][o.e.n.Node               ] [ist441giles.ist.psu.edu] closed
+[2018-01-21T13:07:18,020][INFO ][o.e.n.Node               ] [ist441giles.ist.psu.edu] initializing ...
+[2018-01-21T13:07:18,093][INFO ][o.e.e.NodeEnvironment    ] [ist441giles.ist.psu.edu] using [1] data paths, mounts [[/data (/dev/mapper/centos-data)]], net usable_space [370.9gb], net total_space [371gb], types [xfs]
+[2018-01-21T13:07:18,093][INFO ][o.e.e.NodeEnvironment    ] [ist441giles.ist.psu.edu] heap size [989.8mb], compressed ordinary object pointers [true]
+[2018-01-21T13:07:18,095][INFO ][o.e.n.Node               ] [ist441giles.ist.psu.edu] node name [ist441giles.ist.psu.edu], node ID [hyp3VaJRRXSb9xP3beSfJg]
+[2018-01-21T13:07:18,095][INFO ][o.e.n.Node               ] [ist441giles.ist.psu.edu] version[6.1.2], pid[33089], build[5b1fea5/2018-01-10T02:35:59.208Z], OS[Linux/3.10.0-693.11.6.el7.x86_64/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_144/25.144-b01]
+[2018-01-21T13:07:18,095][INFO ][o.e.n.Node               ] [ist441giles.ist.psu.edu] JVM arguments [-Xms1g, -Xmx1g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -XX:+HeapDumpOnOutOfMemoryError, -Des.path.home=/data/ist441/team1/indexer/elasticsearch-6.1.2, -Des.path.conf=/data/ist441/team1/indexer/elasticsearch-6.1.2/config]
+[2018-01-21T13:07:18,866][INFO ][o.e.p.PluginsService     ] [ist441giles.ist.psu.edu] loaded module [aggs-matrix-stats]
+[2018-01-21T13:07:18,868][INFO ][o.e.p.PluginsService     ] [ist441giles.ist.psu.edu] loaded module [analysis-common]
+[2018-01-21T13:07:18,868][INFO ][o.e.p.PluginsService     ] [ist441giles.ist.psu.edu] loaded module [ingest-common]
+[2018-01-21T13:07:18,868][INFO ][o.e.p.PluginsService     ] [ist441giles.ist.psu.edu] loaded module [lang-expression]
+[2018-01-21T13:07:18,868][INFO ][o.e.p.PluginsService     ] [ist441giles.ist.psu.edu] loaded module [lang-mustache]
+[2018-01-21T13:07:18,868][INFO ][o.e.p.PluginsService     ] [ist441giles.ist.psu.edu] loaded module [lang-painless]
+[2018-01-21T13:07:18,869][INFO ][o.e.p.PluginsService     ] [ist441giles.ist.psu.edu] loaded module [mapper-extras]
+[2018-01-21T13:07:18,869][INFO ][o.e.p.PluginsService     ] [ist441giles.ist.psu.edu] loaded module [parent-join]
+[2018-01-21T13:07:18,869][INFO ][o.e.p.PluginsService     ] [ist441giles.ist.psu.edu] loaded module [percolator]
+[2018-01-21T13:07:18,869][INFO ][o.e.p.PluginsService     ] [ist441giles.ist.psu.edu] loaded module [reindex]
+[2018-01-21T13:07:18,869][INFO ][o.e.p.PluginsService     ] [ist441giles.ist.psu.edu] loaded module [repository-url]
+[2018-01-21T13:07:18,869][INFO ][o.e.p.PluginsService     ] [ist441giles.ist.psu.edu] loaded module [transport-netty4]
+[2018-01-21T13:07:18,869][INFO ][o.e.p.PluginsService     ] [ist441giles.ist.psu.edu] loaded module [tribe]
+[2018-01-21T13:07:18,870][INFO ][o.e.p.PluginsService     ] [ist441giles.ist.psu.edu] no plugins loaded
+[2018-01-21T13:07:19,970][INFO ][o.e.d.DiscoveryModule    ] [ist441giles.ist.psu.edu] using discovery type [zen]
+[2018-01-21T13:07:20,470][INFO ][o.e.n.Node               ] [ist441giles.ist.psu.edu] initialized
+[2018-01-21T13:07:20,470][INFO ][o.e.n.Node               ] [ist441giles.ist.psu.edu] starting ...
+[2018-01-21T13:07:20,576][INFO ][o.e.t.TransportService   ] [ist441giles.ist.psu.edu] publish_address {130.203.135.65:9300}, bound_addresses {130.203.135.65:9300}
+[2018-01-21T13:07:20,583][INFO ][o.e.b.BootstrapChecks    ] [ist441giles.ist.psu.edu] bound or publishing to a non-loopback address, enforcing bootstrap checks
+[2018-01-21T13:07:20,587][ERROR][o.e.b.Bootstrap          ] [ist441giles.ist.psu.edu] node validation exception
+[1] bootstrap checks failed
+[1]: max file descriptors [4096] for elasticsearch process is too low, increase to at least [65536]
+[2018-01-21T13:07:20,590][INFO ][o.e.n.Node               ] [ist441giles.ist.psu.edu] stopping ...
+[2018-01-21T13:07:20,626][INFO ][o.e.n.Node               ] [ist441giles.ist.psu.edu] stopped
+[2018-01-21T13:07:20,626][INFO ][o.e.n.Node               ] [ist441giles.ist.psu.edu] closing ...
+[2018-01-21T13:07:20,633][INFO ][o.e.n.Node               ] [ist441giles.ist.psu.edu] closed
