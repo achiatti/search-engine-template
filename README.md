@@ -39,7 +39,7 @@ Following are some step-by-step guidelines to get the code up and running.
    
 
    * `startup.sh` and `stop.sh` start and kill the interface process respectively.
-   * './interface/media' can be used to store images to use and/or index in the search engine. It is linked with the `settings.py` file
+   * `./interface/media` can be used to store images to use and/or index in the search engine. It is linked with the `settings.py` file
      too, to ensure that the browser visualization of local files is enabled (see `urls.py` file settings too). 
    * `./interface/templates` gathers all the HTML templates used in this demo. Related stylesheets are store under `intui-static`
    * Following the Django framework, models for the data records to retrieve are defined under `./interface/rsc/models.py`
