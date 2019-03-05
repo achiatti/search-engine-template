@@ -12,6 +12,6 @@ if sudo lsof -Pi :$INTERFACE_PORT -sTCP:LISTEN -t >/dev/null ; then
 else
     cd interface
     nohup python manage.py runserver ist441giles.ist.psu.edu:$INTERFACE_PORT  &
-    echo "Interface started on http://ist441giles.ist.psu.edu:$INTERFACE_PORT"
+    echo "Interface started on http://yourhost.edu:$INTERFACE_PORT"
     cd ..
 fi

@@ -6,18 +6,18 @@ import sys, json
 #path to JSON collection
 path='path/to/your/json/collection'
 
-#User credentials 
+#User credentials, if Elastic is installed with XPack 
 USER=''
 PASSWORD=''
 
 #Choose a name for your index and an ad hoc document type (e.g. newsarticle)
-INDEX_NAME='ist441-test'
-DOCTYPE='webpage'
+INDEX_NAME='YOURINDEXNAME'
+DOCTYPE= 'webpage'
 
 #Configuring connection parameters
 es = Elasticsearch(
 
-['ist441giles.ist.psu.edu'],
+['YOUR-HOSTNAME-HERE'],
 port= 9201
 
 )

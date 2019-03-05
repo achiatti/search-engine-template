@@ -7,7 +7,6 @@ from django.shortcuts import get_object_or_404
 import requests
 from settings import *
 from manage import * 
-#from bs4 import BeautifulSoup
 from elasticsearch import Elasticsearch, helpers
 
 ERR_QUERY_NOT_FOUND='<h1>Query not found</h1>'
@@ -16,19 +15,18 @@ ERR_IMG_NOT_AVAILABLE='The requested result can not be shown now'
 ELASTIC_PORT = "9202"
 #USER = open("elastic-settings.txt").read().split("\n")[1]
 #PASSWORD = open("elastic-settings.txt").read().split("\n")[2]
-ELASTIC_INDEX= 'ist441-test-0'
+ELASTIC_INDEX= 'YOUR_INDEX_NAME'
 
 #open connection to Elastic
 es = Elasticsearch(
 
-['ist441giles.ist.psu.edu'],
+['YOUR_HOST_NAME'],
 port= ELASTIC_PORT
 )
 
 #Include the following if user authentication is on (i.e., XPack is installed and linked with Elastic)
 #http_auth=(USER, PASSWORD),
 
-#SOLR_BASE_URL = "http://localhost:{0}/solr/{1}/select?&q=".format(SOLR_PORT,COLLECTION_NAME)
 def home(request):
     if request.method == 'POST':
         q = request.POST.get('q',None)
